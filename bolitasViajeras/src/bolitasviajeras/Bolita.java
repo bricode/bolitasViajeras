@@ -10,14 +10,16 @@ package bolitasviajeras;
  * @author edgar
  */
 public class Bolita {
-    boolean esLisa = true;
-    float peso;
-    float velocidad;
+    private boolean esLisa = true;
+    private float peso;
+    private float velocidad;
+    private float tiempoRecorrido;
     
-    public Bolita(boolean tipo, float peso, float velocidad) {
+    public Bolita(boolean tipo, float peso, float velocidad, float tiempoRecorrido) {
         this.esLisa = tipo;
         this.peso = peso;
         this.velocidad = velocidad;
+        this.tiempoRecorrido = tiempoRecorrido;
     }
 
     public boolean isEsLisa() {
@@ -44,6 +46,9 @@ public class Bolita {
         this.velocidad = velocidad;
     }
     
+    public void sumaTiempoRecorrido(float segDetencion){
+    	this.tiempoRecorrido =+ tiempoRecorrido;
+    }
     
     
 }
