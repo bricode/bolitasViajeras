@@ -45,6 +45,16 @@ public class Bolita {
     public void setVelocidad(float velocidad) {
         this.velocidad = velocidad;
     }
+
+    public float getTiempoRecorrido() {
+        return tiempoRecorrido;
+    }
+
+    public void setTiempoRecorrido(float tiempoRecorrido) {
+        this.tiempoRecorrido = tiempoRecorrido;
+    }
+    
+    
     
     public void sumaTiempoRecorrido(float segDetencion){
     	this.tiempoRecorrido =+ tiempoRecorrido;
