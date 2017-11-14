@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bolitasviajeras;
 
 
@@ -12,14 +7,25 @@ package bolitasviajeras;
  */
 public class DesvioPorTipo extends Tramo{
     
-    
-    
-    
-    public void next( Bolita bolita ) {
+    public DesvioPorTipo(Tramo salida1, Tramo salida2) {
+		super(salida1, salida2);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Tramo next( Bolita bolita ) {
         if(bolita.esLisa) {
-            salida
+            return salida1;
+        }else{
+        	return salida2;
         }
     }
+
+	@Override
+	public float cuantoTarda(Bolita bolita) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
     
     
 }
+
