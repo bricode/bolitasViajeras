@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bolitasviajeras;
 
 /**
@@ -13,11 +8,14 @@ public class Bolita {
     boolean esLisa = true;
     float peso;
     float velocidad;
+    float tiempoRecorrido;
     
-    public Bolita(boolean tipo, float peso, float velocidad) {
+    
+    public Bolita(boolean tipo, float peso, float velocidad, float tiempoRecorrido) {
         this.esLisa = tipo;
         this.peso = peso;
         this.velocidad = velocidad;
+        this.tiempoRecorrido= tiempoRecorrido;
     }
 
     public boolean isEsLisa() {
@@ -44,6 +42,8 @@ public class Bolita {
         this.velocidad = velocidad;
     }
     
-    
+    public void sumaTiempoRecorrido(float segDetencion){
+    	this.tiempoRecorrido =+ tiempoRecorrido;
+    }
     
 }
